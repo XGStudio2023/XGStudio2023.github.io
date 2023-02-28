@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>信管帮APPStore</title>
+    <link rel="icon" href="https://XGStudio2023.github.io/app-store/images/appstore1/Xlogo.webp">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            height: 100%;
+        }
+        body{
+            background: url(./images/appstore1/background.webp) no-repeat;
+            background-size: 100% 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .container{
+            /*
+            border: 2px solid red;*/
+            width: 100%;
+        }
+        .container1{
+            height: 8.9372rem;/*370px*/
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: end;
+        }
+        .box1{
+            /*
+            border: 1px solid red;*/
+            width: 100%;
+            height: 1.9rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .box1 .app{
+            /*
+            border: 2px solid red;*/
+            width: 1.6908rem;
+            height: 1.6908rem;
+            background: url(./images/appstore1/APP.png) no-repeat;
+            background-size: contain;
+        } 
+        .box1 span{
+            /*
+            border: 1px solid red;*/
+            color: rgb(255, 255, 255);
+            font-weight: 400;
+            font-size: .8454rem;
+            letter-spacing: .0725rem;
+            margin-left: .2415rem;
+        }
+        .box2{
+            /*
+            border: 1px solid red;*/
+            color: rgb(255, 255, 255);
+            font-size: .4831rem;
+            font-weight: 600;
+            text-align: center;
+            line-height: .9662rem;
+        }
+        .box3{
+            /*
+            border: 1px solid red;*/
+            border-radius: .6039rem;
+            box-shadow: .2415rem .2415rem .2415rem #000000;
+            display: inline-block;
+            width: 6.0386rem;
+            height: 1.2077rem;
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            margin-top: .4831rem;
+            margin-bottom: .7246rem;
+            background: #4099ff;
+        }
+        .box3:hover{
+            box-shadow: none;
+        }
+        .box3 .icon{
+            /*
+            border: 1px solid red;*/
+            width: .8454rem;
+            height: .8454rem;
+            margin: auto 0rem;
+            background: url(./images/appstore1/Android.webp) no-repeat;
+            background-size: contain;
+        }
+        .box3 span{
+            /*
+            border: 1px solid red;*/
+            font-size: .4831rem;
+            line-height: 1.2077rem;
+            font-weight: 300;
+            color: #fff;
+            letter-spacing: .0242rem;
+            margin-left: .1932rem;
+
+        }
+
+
+
+        .container2{
+            /*
+            border: 2px solid rgb(0, 255, 128);*/
+            flex: 1;
+            background: url(./images/appstore1/container2.webp) no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container container1">
+        <div class="box1">
+           <div class="app"></div>
+           <span>信管帮</span> 
+        </div>
+        <div class="box2">TRY TO BE YOUR FAVORITE</div>
+        <a class="box3" href="./code1/xinguanbang1.0.1.apk" download="信管帮">
+            <div class="icon"></div>
+            <span>点击下载</span>
+        </a>
+        
+    </div>
+    <div class="container container2"></div>
+
+
+
+
+
+
+    
+    <script>
+        //根据设备宽度计算html的font-size
+        function resetHtmlFont(){
+            //获取html对象并动态设置font-size = 设备宽度的1/10
+            document.documentElement.style.fontSize = screen.width/10 + 'px';
+        }
+        //执行一下
+        resetHtmlFont();
+        //如果窗口大小改变了，则重新计算基础font-size
+        window.onresize = resetHtmlFont;
+    </script>
+</body>
+</html>
