@@ -87,7 +87,7 @@ function onSuccess(position) {
         gc.getLocation(point, function (rs) { 
             var addComp = rs.addressComponents;
             //alert("您的IP地址为: "+addComp.province + " " + addComp.city + " " + addComp.district + " " + addComp.street + " " + addComp.streetNumber);
-            alert("您的IP地址为: "+addComp.province + "" + addComp.city + "" + addComp.district+ "" + addComp.street + "" + addComp.streetNumber+longitude+","+latitude);
+            alert("您的IP地址为: "+addComp.province + "" + addComp.city + "" + addComp.district+ "" + addComp.street + "" + addComp.streetNumber);
             var l1 = (map.getDistance(myP1, myP2)).toFixed(2)
             //if(l1 <= 50){
               if(l1 <= 900){
